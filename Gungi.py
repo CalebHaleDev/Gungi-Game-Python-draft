@@ -4,19 +4,41 @@ import math
 
 pieceCatalog = ["N/A", "Catapult", "Fortress","Spy","Captain","Samurai","Hidden dragon","Prodigy","Bow","Pawn(B)","Pawn(S)","Pawn(G)",
 "Commander","Lance","Lance","Clandestinite","Pistol","Pike","Dragon king","Phoenix","Arrow","Bronze","Silver","Gold"]
-
+turn = 1
 
 def main():
-    if ask("Do you want to skip the initial arrangement of the board?"/n) == "no": initialArangement()
-    else: board = matrix[9,9,3]
-         
-def initialArangement():
-    print("hello world")
+    if ask("Do you want to skip the initial arrangement of the board?"/n) == "no":
+        initialArangement()
+    else:
+        board = matrix[9,9,3]
+    gamemode = "manual" if ask("Do you want to play manually?) == "yes" else "automatic"
+    if gamemode == "manual":
+        #repeatedly take turns, moving via:
+        #printBoard()
+        #select move with askMove()
+        #makeMove(selectedMove)
+    else:
+        #repeatedly:
+        #for every piece, checkMove(), (and drop moves too)
+             #for every move, makeMove() if that isn't already in the database
 
-def move():
+    
+def initialArangement():
+    #move, limited to "drop" moves, until all pieces placed
+
+def askMove():
+    if 
+    #printBoard(board)
     ask("Which piece would you like to move?")
     ask("Where would you like to move the piece?")
     answer = ask("what is the meaning of the universe")
+                               
+def checkMove(origin):
+    #this will check where pieces can go
+                               
+def makeMove(moveCode):
+    #this will make a move happen, once selected
+    #if valid, move and return true, else return false
 
 def ask(question):
     while confirmation != "yes":
@@ -31,6 +53,8 @@ def drop():
 def flipPiece(piece):
     return(-1*mod(abs(piece)+14,24))
 
+def printBoard(board):
+    #code to print the board "board" here
 
 print("1,2,3,4,5,6,7,8,9" \n
       "1,2,3,4,5,6,7,8,9" \n
