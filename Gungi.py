@@ -44,6 +44,7 @@ def checkMove(origin):
 def makeMove(moveCode):
     #this will make a move happen, once selected
     #if valid, move and return true, else return false
+    #record board to database
 
 def ask(question):
     while confirmation != "yes":
