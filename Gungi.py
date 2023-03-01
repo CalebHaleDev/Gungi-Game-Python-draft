@@ -1,11 +1,6 @@
-# Gungi Game engine preliminary code
-# 2/28/23
-# This code is just to get ideas and notation written out, final
-#   will be written in Unreal Engine once bugs and visuals
-#   are cleaned up
-
+# Gungi Game engine preliminary code    2/28/23
+# This code is just to get ideas and notation written out, final will be written in Unreal Engine once bugs and visuals are cleaned up
 import math
-
 
 
 def main():
