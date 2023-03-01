@@ -27,6 +27,9 @@ def ask(question):
 
 def drop():
     print("hello world")
+    
+def flipPiece(piece):
+    return(-1*mod(abs(piece)+14,24))
 
 
 print("1,2,3,4,5,6,7,8,9" \n
