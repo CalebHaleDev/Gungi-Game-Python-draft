@@ -2,33 +2,9 @@
 # This code is just to get ideas and notation written out, final will be written in Unreal Engine once bugs and visuals are cleaned up
 import math
 
-"""
-#pieces:
-#N/A
-Catapult
-Fortress
-Spy
-Captain
-Samurai
-Hidden dragon
-Prodigy
-Bow
-Pawn(B)
-Pawn(S)
-Pawn(G)
-Commander
-Lance
-Lance
-Clandestinite
-Pistol
-Pike
-Dragon king
-Phoenix
-Arrow
-Bronze
-Silver
-Gold
-"""
+pieceCatalog = ["N/A", "Catapult", "Fortress","Spy","Captain","Samurai","Hidden dragon","Prodigy","Bow","Pawn(B)","Pawn(S)","Pawn(G)",
+"Commander","Lance","Lance","Clandestinite","Pistol","Pike","Dragon king","Phoenix","Arrow","Bronze","Silver","Gold"]
+
 
 def main():
     if ask("Do you want to skip the initial arrangement of the board?"/n) == "no": initialArangement()
