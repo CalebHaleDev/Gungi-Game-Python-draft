@@ -11,7 +11,6 @@ import math
 def main():
 
     if ask("Do you want to skip the initial arrangement of the board?"/n) == "no": initialArangement
-
     else: board = matrix[9,9,3]
 
     return board
