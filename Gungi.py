@@ -18,6 +18,7 @@ def main():
         board = matrix[9,9,3]
     gamemode = "manual" if ask("Do you want to play manually?) == "yes" else "automatic"
     if gamemode == "manual":
+        #create empty move history for the game
         #repeatedly take turns, moving via:
         #printBoard()
         #select move with askMove()
@@ -44,7 +45,12 @@ def checkMove(origin):
 def makeMove(moveCode):
     #this will make a move happen, once selected
     #if valid, move and return true, else return false
+    #add move to game move history
     #record board to database
+
+def recordToDatabase(input):
+    #linked graph for boardstates: boards are nodes, moves are edges.
+    #If a board has a win condition, make it -1 or 1 "win likelihood", otherwise define one based on an average of the outcomes if all outcomes have been calculated (recursive).                               
 
 def ask(question):
     while confirmation != "yes":
