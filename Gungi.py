@@ -6,6 +6,11 @@ pieceCatalog = ["N/A", "Catapult", "Fortress","Spy","Captain","Samurai","Hidden 
 "Commander","Lance","Lance","Clandestinite","Pistol","Pike","Dragon king","Phoenix","Arrow","Bronze","Silver","Gold"]
 turn = 1
 
+#Bryce, replace the names below with whatever abbreviations you want to display:
+pieceAbbreviatedCatalog = ["N/A", "Catapult", "Fortress","Spy","Captain","Samurai","Hidden dragon","Prodigy","Bow","Pawn(B)","Pawn(S)","Pawn(G)",
+"Commander","Lance","Lance","Clandestinite","Pistol","Pike","Dragon king","Phoenix","Arrow","Bronze","Silver","Gold"]
+
+
 def main():
     if ask("Do you want to skip the initial arrangement of the board?"/n) == "no":
         initialArangement()
